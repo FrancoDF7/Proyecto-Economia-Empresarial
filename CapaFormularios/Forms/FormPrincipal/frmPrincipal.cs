@@ -1,5 +1,5 @@
 ﻿using CapaSoporte.Cache;
-using Software_Contable.Forms.FormUsuario;
+//using Software_Contable.Forms.FormUsuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +62,7 @@ namespace Software_Contable.Forms.FormPrincipal
         private void btnProductos_Click(object sender, EventArgs e)
         {
             MostrarSubmenu(panelProductoSubmenu);
-            AbrirFormHijo(new frmProductos());
+            //AbrirFormHijo(new frmProductos());
         }
         private void btnProductoIngresar_Click(object sender, EventArgs e)
         {
@@ -73,8 +73,8 @@ namespace Software_Contable.Forms.FormPrincipal
         {
             OcultarSubmenu();
 
-            frmProveedoresProductos frmProveedoresProductos= new frmProveedoresProductos();
-            frmProveedoresProductos.ShowDialog();
+            //frmProveedoresProductos frmProveedoresProductos= new frmProveedoresProductos();
+            //frmProveedoresProductos.ShowDialog();
         }
         private void btnProductoEliminar_Click(object sender, EventArgs e)
         {
@@ -86,7 +86,7 @@ namespace Software_Contable.Forms.FormPrincipal
         private void btnClientes_Click(object sender, EventArgs e)
         {
             MostrarSubmenu(panelClienteSubmenu);
-            AbrirFormHijo(new frmClientes());
+            //AbrirFormHijo(new frmClientes());
         }
         private void btnClienteIngresar_Click(object sender, EventArgs e)
         {
@@ -106,7 +106,7 @@ namespace Software_Contable.Forms.FormPrincipal
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             MostrarSubmenu(panelProveedorSubmenu);
-            AbrirFormHijo(new frmProveedores());
+            //AbrirFormHijo(new frmProveedores());
         }
         private void btnProveedorIngresar_Click(object sender, EventArgs e)
         {
@@ -128,7 +128,7 @@ namespace Software_Contable.Forms.FormPrincipal
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new frmCompras());
+            //AbrirFormHijo(new frmCompras());
             MostrarSubmenu(panelComprasSubmenu);
         }
 
@@ -138,7 +138,7 @@ namespace Software_Contable.Forms.FormPrincipal
         private void btnVentas_Click(object sender, EventArgs e)
         {
             MostrarSubmenu(panelVentasSubmenu);
-            AbrirFormHijo(new frmVentas());
+            //AbrirFormHijo(new frmVentas());
         }
 
         #endregion
@@ -158,7 +158,7 @@ namespace Software_Contable.Forms.FormPrincipal
         }
         private void btnPlanCuentas_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new frmPlanCuentas());
+            //AbrirFormHijo(new frmPlanCuentas());
         }
 
         #endregion
@@ -259,8 +259,8 @@ namespace Software_Contable.Forms.FormPrincipal
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
-            frmCrearUsuario frmCrearUsuario = new frmCrearUsuario();
-            frmCrearUsuario.ShowDialog();
+            //frmCrearUsuario frmCrearUsuario = new frmCrearUsuario();
+            //frmCrearUsuario.ShowDialog();
         }
 
         private void btnActualizarUsuario_Click(object sender, EventArgs e)
@@ -290,20 +290,20 @@ namespace Software_Contable.Forms.FormPrincipal
 
         private void btnUsuariosCrear_Click(object sender, EventArgs e)
         {
-            frmCrearUsuario frmCrearUsuario = new frmCrearUsuario();
-            frmCrearUsuario.ShowDialog();
+            //frmCrearUsuario frmCrearUsuario = new frmCrearUsuario();
+            //frmCrearUsuario.ShowDialog();
         }
 
         private void btnUsuariosActualizar_Click(object sender, EventArgs e)
         {
-            frmActualizarUsuario frmActualizarUsuario = new frmActualizarUsuario();
-            frmActualizarUsuario.ShowDialog();
+            //frmActualizarUsuario frmActualizarUsuario = new frmActualizarUsuario();
+            //frmActualizarUsuario.ShowDialog();
         }
 
         private void btnUsuariosPerfil_Click(object sender, EventArgs e)
         {
-            frmEditarPerfil frmEditarPerfil = new frmEditarPerfil();
-            frmEditarPerfil.ShowDialog();
+            //frmEditarPerfil frmEditarPerfil = new frmEditarPerfil();
+            //frmEditarPerfil.ShowDialog();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
