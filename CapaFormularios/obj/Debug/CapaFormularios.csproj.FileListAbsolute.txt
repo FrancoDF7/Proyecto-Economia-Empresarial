@@ -1,0 +1,5 @@
+C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\CapaFormularios.csproj.AssemblyReference.cache
+C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\Software_Contable.frmLogin.resources
+C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\CapaFormularios.Properties.Resources.resources
+C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\CapaFormularios.csproj.GenerateResource.cache
+C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\CapaFormularios.csproj.CoreCompileInputs.cache

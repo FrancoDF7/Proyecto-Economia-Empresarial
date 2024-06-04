@@ -1,0 +1,8 @@
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\obj\Debug\CapaSoporte.csproj.AssemblyReference.cache
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\obj\Debug\CapaSoporte.csproj.CoreCompileInputs.cache
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\bin\Debug\CapaSoporte.dll
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\bin\Debug\CapaSoporte.pdb
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\bin\Debug\FontAwesome.Sharp.dll
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\obj\Debug\CapaSopo.74859D4B.Up2Date
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\obj\Debug\CapaSoporte.dll
+C:\Proyectos VS 2022\SoftwareNegocio\CapaSoporte\obj\Debug\CapaSoporte.pdb

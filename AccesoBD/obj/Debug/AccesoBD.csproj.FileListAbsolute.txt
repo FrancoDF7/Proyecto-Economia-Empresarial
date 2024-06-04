@@ -1,0 +1,8 @@
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\bin\Debug\AccesoBD.dll
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\bin\Debug\AccesoBD.pdb
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\bin\Debug\FontAwesome.Sharp.dll
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\obj\Debug\AccesoBD.csproj.AssemblyReference.cache
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\obj\Debug\AccesoBD.csproj.CoreCompileInputs.cache
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\obj\Debug\AccesoBD.csproj.Up2Date
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\obj\Debug\AccesoBD.dll
+C:\Proyectos VS 2022\SoftwareNegocio\AccesoBD\obj\Debug\AccesoBD.pdb
