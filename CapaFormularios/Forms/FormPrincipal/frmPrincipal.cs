@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Software_Contable.Forms.FormProveedor;
-using Software_Contable.Forms.FormCliente;
-using Software_Contable.Forms.FormCompras;
+//using Software_Contable.Forms.FormProveedor;
+//using Software_Contable.Forms.FormCliente;
+//using Software_Contable.Forms.FormCompras;
 using System.Runtime.InteropServices;
-using Software_Contable.Forms.FormProductos;
-using Software_Contable.Forms.FormContabilidad;
+//using Software_Contable.Forms.FormProductos;
+//using Software_Contable.Forms.FormContabilidad;
 
 namespace Software_Contable.Forms.FormPrincipal
 {
