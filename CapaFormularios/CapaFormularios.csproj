@@ -71,6 +71,42 @@
     <Compile Include="Forms\FormPrincipal\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormUsuario\frmActualizarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuario\frmActualizarUsuario.Designer.cs">
+      <DependentUpon>frmActualizarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuario\frmCrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuario\frmCrearUsuario.Designer.cs">
+      <DependentUpon>frmCrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuario\frmEditarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuario\frmEditarPerfil.Designer.cs">
+      <DependentUpon>frmEditarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxs\MessageBoxConfirmarEleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxs\MessageBoxConfirmarEleccion.Designer.cs">
+      <DependentUpon>MessageBoxConfirmarEleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxs\MessageBoxOperacionExitosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxs\MessageBoxOperacionExitosa.Designer.cs">
+      <DependentUpon>MessageBoxOperacionExitosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxs\MessageBoxOperacionFallida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxs\MessageBoxOperacionFallida.Designer.cs">
+      <DependentUpon>MessageBoxOperacionFallida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormLogin\frmLogin.resx">
@@ -78,6 +114,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPrincipal\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuario\frmActualizarUsuario.resx">
+      <DependentUpon>frmActualizarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuario\frmCrearUsuario.resx">
+      <DependentUpon>frmCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuario\frmEditarPerfil.resx">
+      <DependentUpon>frmEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxs\MessageBoxConfirmarEleccion.resx">
+      <DependentUpon>MessageBoxConfirmarEleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxs\MessageBoxOperacionExitosa.resx">
+      <DependentUpon>MessageBoxOperacionExitosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxs\MessageBoxOperacionFallida.resx">
+      <DependentUpon>MessageBoxOperacionFallida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
