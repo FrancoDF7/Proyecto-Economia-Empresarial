@@ -137,14 +137,24 @@ namespace CapaLogica.Usuarios
                 connection.Open();
                 using (var command = new SqlCommand())
                 {
-                    command.Connection = connection;
+                    try
+                    {
+                        command.Connection = connection;
 
-                    command.Parameters.AddWithValue("@NombreUsuario", ClaseUsuarioCache.NombreUsuario_Cache);
-                    command.Parameters.AddWithValue("@NuevaContrasena", NuevaContrasena);
-                    command.CommandType = CommandType.Text;
+                        command.Parameters.AddWithValue("@NombreUsuario", ClaseUsuarioCache.NombreUsuario_Cache);
+                        command.Parameters.AddWithValue("@NuevaContrasena", NuevaContrasena);
+                        command.CommandType = CommandType.Text;
 
-                    command.CommandText = "EXEC PA_CambiarContrasena @NombreUsuario, @NuevaContrasena";
-                    command.ExecuteNonQuery();
+                        command.CommandText = "EXEC PA_CambiarContrasena @NombreUsuario, @NuevaContrasena";
+                        command.ExecuteNonQuery();
+
+                        ClaseUsuarioCache.Contrasena_Cache = NuevaContrasena;
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+
 
                 }
             }

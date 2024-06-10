@@ -247,7 +247,7 @@ namespace Software_Contable.Forms.FormPrincipal
                 {
 
                 }
-                else
+                else if(frmInicializarContrasena.DialogResult == DialogResult.Cancel)
                 {
                     this.Close();
                 }

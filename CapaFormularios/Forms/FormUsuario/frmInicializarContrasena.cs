@@ -51,7 +51,7 @@ namespace CapaFormularios.Forms.FormUsuario
                 txtContraNueva2.Text = "";
                     
                 messageBox.MostrarMessageBox("Contraseña cambiada exitosamente");
-                this.Hide();
+                this.DialogResult = DialogResult.OK;
             }
 
         }

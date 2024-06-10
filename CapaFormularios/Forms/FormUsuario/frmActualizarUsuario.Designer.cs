@@ -597,6 +597,7 @@
             // btnActualizarUsuario
             // 
             this.btnActualizarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnActualizarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnActualizarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.LawnGreen;
             this.btnActualizarUsuario.FlatAppearance.BorderSize = 2;
             this.btnActualizarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -643,7 +644,7 @@
             this.btnRecargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecargar.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecargar.ForeColor = System.Drawing.Color.White;
-            this.btnRecargar.IconChar = FontAwesome.Sharp.IconChar.RedoAlt;
+            this.btnRecargar.IconChar = FontAwesome.Sharp.IconChar.RotateForward;
             this.btnRecargar.IconColor = System.Drawing.Color.White;
             this.btnRecargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRecargar.IconSize = 20;
@@ -667,7 +668,7 @@
             this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarUsuario.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarUsuario.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnBuscarUsuario.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnBuscarUsuario.IconColor = System.Drawing.Color.White;
             this.btnBuscarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscarUsuario.IconSize = 20;

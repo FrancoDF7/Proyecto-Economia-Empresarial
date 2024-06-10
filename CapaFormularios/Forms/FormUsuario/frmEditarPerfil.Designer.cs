@@ -68,12 +68,12 @@
             // 
             this.txtEmail.Enabled = false;
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(18, 295);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmail.Location = new System.Drawing.Point(16, 236);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.MaxLength = 150;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ShortcutsEnabled = false;
-            this.txtEmail.Size = new System.Drawing.Size(302, 26);
+            this.txtEmail.Size = new System.Drawing.Size(269, 22);
             this.txtEmail.TabIndex = 32;
             // 
             // label8
@@ -81,7 +81,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(14, 265);
+            this.label8.Location = new System.Drawing.Point(12, 212);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(171, 20);
@@ -92,24 +92,24 @@
             // 
             this.txtNombreUsuario.Enabled = false;
             this.txtNombreUsuario.ForeColor = System.Drawing.Color.Black;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(18, 89);
-            this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(16, 71);
+            this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.ReadOnly = true;
             this.txtNombreUsuario.ShortcutsEnabled = false;
-            this.txtNombreUsuario.Size = new System.Drawing.Size(278, 26);
+            this.txtNombreUsuario.Size = new System.Drawing.Size(248, 22);
             this.txtNombreUsuario.TabIndex = 20;
             // 
             // txtApellido
             // 
             this.txtApellido.Enabled = false;
             this.txtApellido.ForeColor = System.Drawing.Color.Black;
-            this.txtApellido.Location = new System.Drawing.Point(18, 225);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtApellido.Location = new System.Drawing.Point(16, 180);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.ReadOnly = true;
             this.txtApellido.ShortcutsEnabled = false;
-            this.txtApellido.Size = new System.Drawing.Size(278, 26);
+            this.txtApellido.Size = new System.Drawing.Size(248, 22);
             this.txtApellido.TabIndex = 23;
             // 
             // label6
@@ -117,7 +117,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(14, 200);
+            this.label6.Location = new System.Drawing.Point(12, 160);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 20);
@@ -127,12 +127,12 @@
             // txtContraNueva2
             // 
             this.txtContraNueva2.ForeColor = System.Drawing.Color.Black;
-            this.txtContraNueva2.Location = new System.Drawing.Point(15, 560);
-            this.txtContraNueva2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtContraNueva2.Location = new System.Drawing.Point(13, 448);
+            this.txtContraNueva2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraNueva2.MaxLength = 32;
             this.txtContraNueva2.Name = "txtContraNueva2";
             this.txtContraNueva2.ShortcutsEnabled = false;
-            this.txtContraNueva2.Size = new System.Drawing.Size(302, 26);
+            this.txtContraNueva2.Size = new System.Drawing.Size(269, 22);
             this.txtContraNueva2.TabIndex = 28;
             // 
             // label5
@@ -140,7 +140,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(14, 529);
+            this.label5.Location = new System.Drawing.Point(12, 423);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 20);
@@ -150,12 +150,12 @@
             // txtContraNueva1
             // 
             this.txtContraNueva1.ForeColor = System.Drawing.Color.Black;
-            this.txtContraNueva1.Location = new System.Drawing.Point(15, 474);
-            this.txtContraNueva1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtContraNueva1.Location = new System.Drawing.Point(13, 379);
+            this.txtContraNueva1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraNueva1.MaxLength = 32;
             this.txtContraNueva1.Name = "txtContraNueva1";
             this.txtContraNueva1.ShortcutsEnabled = false;
-            this.txtContraNueva1.Size = new System.Drawing.Size(302, 26);
+            this.txtContraNueva1.Size = new System.Drawing.Size(269, 22);
             this.txtContraNueva1.TabIndex = 26;
             this.txtContraNueva1.TextChanged += new System.EventHandler(this.txtContraNueva1_TextChanged);
             // 
@@ -164,7 +164,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(14, 444);
+            this.label4.Location = new System.Drawing.Point(12, 355);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 20);
@@ -175,12 +175,12 @@
             // 
             this.txtNombre.Enabled = false;
             this.txtNombre.ForeColor = System.Drawing.Color.Black;
-            this.txtNombre.Location = new System.Drawing.Point(18, 162);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Location = new System.Drawing.Point(16, 130);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
             this.txtNombre.ShortcutsEnabled = false;
-            this.txtNombre.Size = new System.Drawing.Size(278, 26);
+            this.txtNombre.Size = new System.Drawing.Size(248, 22);
             this.txtNombre.TabIndex = 22;
             // 
             // label3
@@ -188,7 +188,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(14, 138);
+            this.label3.Location = new System.Drawing.Point(12, 110);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 20);
@@ -198,12 +198,12 @@
             // txtContraActual
             // 
             this.txtContraActual.ForeColor = System.Drawing.Color.Black;
-            this.txtContraActual.Location = new System.Drawing.Point(15, 400);
-            this.txtContraActual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtContraActual.Location = new System.Drawing.Point(13, 320);
+            this.txtContraActual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraActual.MaxLength = 32;
             this.txtContraActual.Name = "txtContraActual";
             this.txtContraActual.ShortcutsEnabled = false;
-            this.txtContraActual.Size = new System.Drawing.Size(302, 26);
+            this.txtContraActual.Size = new System.Drawing.Size(269, 22);
             this.txtContraActual.TabIndex = 25;
             // 
             // label2
@@ -211,7 +211,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(14, 376);
+            this.label2.Location = new System.Drawing.Point(12, 301);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 20);
@@ -223,7 +223,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 10.2F);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(14, 65);
+            this.label1.Location = new System.Drawing.Point(12, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 20);
@@ -244,32 +244,34 @@
             // 
             // btnVerContrasena2
             // 
+            this.btnVerContrasena2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerContrasena2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnVerContrasena2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerContrasena2.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
             this.btnVerContrasena2.IconColor = System.Drawing.Color.White;
             this.btnVerContrasena2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVerContrasena2.IconSize = 32;
-            this.btnVerContrasena2.Location = new System.Drawing.Point(362, 556);
-            this.btnVerContrasena2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerContrasena2.Location = new System.Drawing.Point(322, 445);
+            this.btnVerContrasena2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerContrasena2.Name = "btnVerContrasena2";
-            this.btnVerContrasena2.Size = new System.Drawing.Size(54, 35);
+            this.btnVerContrasena2.Size = new System.Drawing.Size(48, 28);
             this.btnVerContrasena2.TabIndex = 53;
             this.btnVerContrasena2.UseVisualStyleBackColor = true;
             this.btnVerContrasena2.Click += new System.EventHandler(this.btnVerContrasena2_Click);
             // 
             // btnVerContrasena1
             // 
+            this.btnVerContrasena1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerContrasena1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnVerContrasena1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerContrasena1.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
             this.btnVerContrasena1.IconColor = System.Drawing.Color.White;
             this.btnVerContrasena1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVerContrasena1.IconSize = 32;
-            this.btnVerContrasena1.Location = new System.Drawing.Point(362, 470);
-            this.btnVerContrasena1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerContrasena1.Location = new System.Drawing.Point(322, 376);
+            this.btnVerContrasena1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerContrasena1.Name = "btnVerContrasena1";
-            this.btnVerContrasena1.Size = new System.Drawing.Size(54, 35);
+            this.btnVerContrasena1.Size = new System.Drawing.Size(48, 28);
             this.btnVerContrasena1.TabIndex = 52;
             this.btnVerContrasena1.UseVisualStyleBackColor = true;
             this.btnVerContrasena1.Click += new System.EventHandler(this.btnVerContrasena1_Click);
@@ -284,7 +286,7 @@
             this.lblVerificaContrasena.AutoSize = true;
             this.lblVerificaContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVerificaContrasena.ForeColor = System.Drawing.Color.Red;
-            this.lblVerificaContrasena.Location = new System.Drawing.Point(14, 504);
+            this.lblVerificaContrasena.Location = new System.Drawing.Point(12, 403);
             this.lblVerificaContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVerificaContrasena.Name = "lblVerificaContrasena";
             this.lblVerificaContrasena.Size = new System.Drawing.Size(159, 17);
@@ -294,16 +296,17 @@
             // 
             // btnVerContraActual
             // 
+            this.btnVerContraActual.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerContraActual.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnVerContraActual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerContraActual.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
             this.btnVerContraActual.IconColor = System.Drawing.Color.White;
             this.btnVerContraActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVerContraActual.IconSize = 32;
-            this.btnVerContraActual.Location = new System.Drawing.Point(362, 400);
-            this.btnVerContraActual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerContraActual.Location = new System.Drawing.Point(322, 320);
+            this.btnVerContraActual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerContraActual.Name = "btnVerContraActual";
-            this.btnVerContraActual.Size = new System.Drawing.Size(54, 35);
+            this.btnVerContraActual.Size = new System.Drawing.Size(48, 28);
             this.btnVerContraActual.TabIndex = 55;
             this.btnVerContraActual.UseVisualStyleBackColor = true;
             this.btnVerContraActual.Click += new System.EventHandler(this.btnVerContraActual_Click);
@@ -316,9 +319,8 @@
             this.BarraTitulo.Controls.Add(this.btnCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(452, 44);
+            this.BarraTitulo.Size = new System.Drawing.Size(402, 35);
             this.BarraTitulo.TabIndex = 56;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
@@ -327,7 +329,7 @@
             this.lblSeccionClientes.AutoSize = true;
             this.lblSeccionClientes.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeccionClientes.ForeColor = System.Drawing.Color.White;
-            this.lblSeccionClientes.Location = new System.Drawing.Point(51, 5);
+            this.lblSeccionClientes.Location = new System.Drawing.Point(45, 4);
             this.lblSeccionClientes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSeccionClientes.Name = "lblSeccionClientes";
             this.lblSeccionClientes.Size = new System.Drawing.Size(153, 23);
@@ -337,14 +339,13 @@
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserPen;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 44;
-            this.iconPictureBox1.Location = new System.Drawing.Point(8, -1);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconPictureBox1.IconSize = 35;
+            this.iconPictureBox1.Location = new System.Drawing.Point(7, -1);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(55, 44);
+            this.iconPictureBox1.Size = new System.Drawing.Size(49, 35);
             this.iconPictureBox1.TabIndex = 89;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -359,10 +360,10 @@
             this.btnCerrar.IconColor = System.Drawing.Color.White;
             this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCerrar.IconSize = 23;
-            this.btnCerrar.Location = new System.Drawing.Point(396, 0);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(352, 0);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(56, 44);
+            this.btnCerrar.Size = new System.Drawing.Size(50, 35);
             this.btnCerrar.TabIndex = 44;
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -370,20 +371,21 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.LawnGreen;
             this.btnGuardar.FlatAppearance.BorderSize = 2;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.UserPen;
+            this.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
             this.btnGuardar.IconColor = System.Drawing.Color.White;
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardar.IconSize = 30;
-            this.btnGuardar.Location = new System.Drawing.Point(71, 635);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGuardar.Location = new System.Drawing.Point(63, 508);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Padding = new System.Windows.Forms.Padding(34, 0, 0, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(291, 46);
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnGuardar.Size = new System.Drawing.Size(259, 37);
             this.btnGuardar.TabIndex = 57;
             this.btnGuardar.Text = "Editar Perfil";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -392,10 +394,10 @@
             // 
             // frmEditarPerfil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(452, 718);
+            this.ClientSize = new System.Drawing.Size(402, 574);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.btnVerContraActual);
@@ -417,7 +419,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmEditarPerfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditarPerfil";
