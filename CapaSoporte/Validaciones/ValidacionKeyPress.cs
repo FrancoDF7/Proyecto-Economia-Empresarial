@@ -195,7 +195,7 @@ namespace CapaSoporte.Validaciones
             {
                 label.Text = "Contraseña Insegura";
                 label.Visible = true;
-                label.ForeColor = Color.Red;
+                label.ForeColor = Color.Tomato;
             }
 
         }

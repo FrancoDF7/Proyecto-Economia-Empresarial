@@ -82,11 +82,11 @@ namespace CapaLogica.Usuarios
 
 
         public void ActualizarUsuario(int DNI, string NombreUsuario, string NuevaContrasena, string Nombre, string Apellido, string TipoUsuario, string Email, string EstadoUsuario, RadioButton rbSi, RadioButton rbNo)
-        {           
-            using(var connection = GetConnection())
+        {
+            using (var connection = GetConnection())
             {
                 connection.Open();
-                using(var command = new SqlCommand())
+                using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
 
@@ -97,12 +97,12 @@ namespace CapaLogica.Usuarios
                     {
                         command.Parameters.AddWithValue("@NuevaContrasena", NuevaContrasena);
                     }
-                    
-                    command.Parameters.AddWithValue("@Nombre",Nombre);
-                    command.Parameters.AddWithValue("@Apellido",Apellido);
-                    command.Parameters.AddWithValue("@TipoUsuario",TipoUsuario);
-                    command.Parameters.AddWithValue("@Email",Email);
-                    command.Parameters.AddWithValue("@EstadoUsuario",EstadoUsuario);
+
+                    command.Parameters.AddWithValue("@Nombre", Nombre);
+                    command.Parameters.AddWithValue("@Apellido", Apellido);
+                    command.Parameters.AddWithValue("@TipoUsuario", TipoUsuario);
+                    command.Parameters.AddWithValue("@Email", Email);
+                    command.Parameters.AddWithValue("@EstadoUsuario", EstadoUsuario);
 
                     command.CommandType = CommandType.Text;
 
@@ -129,6 +129,27 @@ namespace CapaLogica.Usuarios
 
 
         }
+
+        public void CambiarContrasena(string NuevaContrasena)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+
+                    command.Parameters.AddWithValue("@NombreUsuario", ClaseUsuarioCache.NombreUsuario_Cache);
+                    command.Parameters.AddWithValue("@NuevaContrasena", NuevaContrasena);
+                    command.CommandType = CommandType.Text;
+
+                    command.CommandText = "EXEC PA_CambiarContrasena @NombreUsuario, @NuevaContrasena";
+                    command.ExecuteNonQuery();
+
+                }
+            }
+        }
+
 
         public DataTable BuscarUsuario_DataGridView(string Columna, string Valor)
         {

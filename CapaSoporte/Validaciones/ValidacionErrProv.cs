@@ -15,13 +15,13 @@ namespace CapaSoporte.Validaciones
         public bool Valida_Error_NombreUsuario(ErrorProvider errorProvider, TextBox textBoxNombreUsuario)
         {
             errorProvider.Clear();
-            if (textBoxNombreUsuario.Text.Length >= 3)
+            if (textBoxNombreUsuario.Text.Length >= 5)
             {
                 return true;
             }
             else
             {
-                errorProvider.SetError(textBoxNombreUsuario, "Error: Nombre de usuario inválido, debe poseer al menos 3 caracteres");
+                errorProvider.SetError(textBoxNombreUsuario, "Error: Nombre de usuario inválido, debe poseer al menos 5 caracteres");
                 return false;
             }
         }

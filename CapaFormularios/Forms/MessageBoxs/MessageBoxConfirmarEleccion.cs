@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaFormularios.Forms.FormUsuario;
+using CapaSoporte.Extras;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,16 +47,12 @@ namespace Software_Contable.MessageBoxs
             return ShowDialog(null);
         }
 
-        #region Mover Formulario
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
+        #region Mover Formulario
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            ClaseMoverForm mover = new ClaseMoverForm();
+            mover.MoverForm(this.Handle);
         }
         #endregion
 

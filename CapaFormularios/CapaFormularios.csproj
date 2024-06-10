@@ -89,6 +89,12 @@
     <Compile Include="Forms\FormUsuario\frmEditarPerfil.Designer.cs">
       <DependentUpon>frmEditarPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormUsuario\frmInicializarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuario\frmInicializarContrasena.Designer.cs">
+      <DependentUpon>frmInicializarContrasena.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MessageBoxs\MessageBoxConfirmarEleccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormUsuario\frmEditarPerfil.resx">
       <DependentUpon>frmEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuario\frmInicializarContrasena.resx">
+      <DependentUpon>frmInicializarContrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MessageBoxs\MessageBoxConfirmarEleccion.resx">
       <DependentUpon>MessageBoxConfirmarEleccion.cs</DependentUpon>

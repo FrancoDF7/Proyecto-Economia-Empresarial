@@ -14,6 +14,8 @@ using System.Text.RegularExpressions;
 using System.Windows.Media;
 using Microsoft.SqlServer.Server;
 using Color = System.Drawing.Color;
+using CapaSoporte.Cache;
+
 
 namespace Software_Contable
 {
@@ -37,6 +39,21 @@ namespace Software_Contable
 
                     if (validaLogin == true)
                     {
+                        // Verifica si ClaseUsuarioCache.Contrasena_Cache es un número
+                        if (int.TryParse(ClaseUsuarioCache.Contrasena_Cache, out int numero))
+                        {
+                            // Muestra el formulario
+                            frmInicializarContrasena frmInicializarContrasena = new frmInicializarContrasena();
+                            frmInicializarContrasena.ShowDialog();
+
+                            if (frmInicializarContrasena.DialogResult == DialogResult.OK)
+                            {
+
+                            }
+
+
+                        }
+
                         frmPrincipal frmPrincipal = new frmPrincipal();
                         frmPrincipal.Show();
                         frmPrincipal.FormClosed += CerrarSesion;

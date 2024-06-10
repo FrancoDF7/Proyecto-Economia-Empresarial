@@ -11,9 +11,7 @@ namespace CapaSoporte.Cache
         public static int ID_Usuario_Cache { get; set; }
         public static int DNI_Cache { get; set; }
         public static string NombreUsuario_Cache { get; set; }
-
-        //public static string Contrasena_Cache { get; set; }
-
+        public static string Contrasena_Cache { get; set; }
         public static string Nombre_Cache { get; set; }
         public static string Apellido_Cache { get; set; }
         public static string TipoUsuario_Cache { get; set; }

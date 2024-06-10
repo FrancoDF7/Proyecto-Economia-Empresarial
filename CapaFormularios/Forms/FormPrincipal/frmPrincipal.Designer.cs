@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelOpciones = new System.Windows.Forms.Panel();
+            this.panelContabilidadSubmenu = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.btnPlanCuentas = new System.Windows.Forms.Button();
+            this.btnContabilidad = new FontAwesome.Sharp.IconButton();
             this.lblFecha = new System.Windows.Forms.Label();
             this.panelUsuariosSubmenu = new System.Windows.Forms.Panel();
             this.btnUsuariosPerfil = new System.Windows.Forms.Button();
@@ -77,12 +82,8 @@
             this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panelContabilidadSubmenu = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnPlanCuentas = new System.Windows.Forms.Button();
-            this.btnContabilidad = new FontAwesome.Sharp.IconButton();
             this.panelOpciones.SuspendLayout();
+            this.panelContabilidadSubmenu.SuspendLayout();
             this.panelUsuariosSubmenu.SuspendLayout();
             this.panelComprasSubmenu.SuspendLayout();
             this.panelVentasSubmenu.SuspendLayout();
@@ -95,7 +96,6 @@
             this.BarraTitulo.SuspendLayout();
             this.panel8.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panelContabilidadSubmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelOpciones
@@ -123,6 +123,88 @@
             this.panelOpciones.Name = "panelOpciones";
             this.panelOpciones.Size = new System.Drawing.Size(305, 614);
             this.panelOpciones.TabIndex = 16;
+            // 
+            // panelContabilidadSubmenu
+            // 
+            this.panelContabilidadSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelContabilidadSubmenu.Controls.Add(this.button5);
+            this.panelContabilidadSubmenu.Controls.Add(this.button6);
+            this.panelContabilidadSubmenu.Controls.Add(this.btnPlanCuentas);
+            this.panelContabilidadSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelContabilidadSubmenu.Location = new System.Drawing.Point(0, 1116);
+            this.panelContabilidadSubmenu.Name = "panelContabilidadSubmenu";
+            this.panelContabilidadSubmenu.Size = new System.Drawing.Size(284, 138);
+            this.panelContabilidadSubmenu.TabIndex = 26;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button5.Location = new System.Drawing.Point(0, 80);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(284, 40);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Editar Perfil";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button6.Location = new System.Drawing.Point(0, 40);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(284, 40);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Actualizar Usuario";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // btnPlanCuentas
+            // 
+            this.btnPlanCuentas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlanCuentas.FlatAppearance.BorderSize = 0;
+            this.btnPlanCuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlanCuentas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPlanCuentas.Location = new System.Drawing.Point(0, 0);
+            this.btnPlanCuentas.Name = "btnPlanCuentas";
+            this.btnPlanCuentas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPlanCuentas.Size = new System.Drawing.Size(284, 40);
+            this.btnPlanCuentas.TabIndex = 0;
+            this.btnPlanCuentas.Text = "Plan de Cuentas";
+            this.btnPlanCuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlanCuentas.UseVisualStyleBackColor = true;
+            this.btnPlanCuentas.Click += new System.EventHandler(this.btnPlanCuentas_Click);
+            // 
+            // btnContabilidad
+            // 
+            this.btnContabilidad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnContabilidad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnContabilidad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
+            this.btnContabilidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.btnContabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContabilidad.Font = new System.Drawing.Font("Calibri", 12F);
+            this.btnContabilidad.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnContabilidad.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.btnContabilidad.IconColor = System.Drawing.Color.White;
+            this.btnContabilidad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnContabilidad.IconSize = 40;
+            this.btnContabilidad.Location = new System.Drawing.Point(0, 1071);
+            this.btnContabilidad.Name = "btnContabilidad";
+            this.btnContabilidad.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.btnContabilidad.Size = new System.Drawing.Size(284, 45);
+            this.btnContabilidad.TabIndex = 25;
+            this.btnContabilidad.Text = "Contabilidad";
+            this.btnContabilidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContabilidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContabilidad.UseVisualStyleBackColor = true;
+            this.btnContabilidad.Click += new System.EventHandler(this.btnContabilidad_Click);
             // 
             // lblFecha
             // 
@@ -299,7 +381,7 @@
             this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompras.Font = new System.Drawing.Font("Calibri", 12F);
             this.btnCompras.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.CartFlatbed;
+            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.DollyFlatbed;
             this.btnCompras.IconColor = System.Drawing.Color.White;
             this.btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCompras.IconSize = 40;
@@ -388,7 +470,7 @@
             this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentas.Font = new System.Drawing.Font("Calibri", 12F);
             this.btnVentas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.DollyBox;
+            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.Dolly;
             this.btnVentas.IconColor = System.Drawing.Color.White;
             this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVentas.IconSize = 40;
@@ -555,7 +637,7 @@
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientes.Font = new System.Drawing.Font("Calibri", 12F);
             this.btnClientes.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnClientes.IconChar = FontAwesome.Sharp.IconChar.PeopleCarry;
+            this.btnClientes.IconChar = FontAwesome.Sharp.IconChar.PeopleCarryBox;
             this.btnClientes.IconColor = System.Drawing.Color.White;
             this.btnClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClientes.IconSize = 40;
@@ -824,88 +906,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // panelContabilidadSubmenu
-            // 
-            this.panelContabilidadSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelContabilidadSubmenu.Controls.Add(this.button5);
-            this.panelContabilidadSubmenu.Controls.Add(this.button6);
-            this.panelContabilidadSubmenu.Controls.Add(this.btnPlanCuentas);
-            this.panelContabilidadSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelContabilidadSubmenu.Location = new System.Drawing.Point(0, 1116);
-            this.panelContabilidadSubmenu.Name = "panelContabilidadSubmenu";
-            this.panelContabilidadSubmenu.Size = new System.Drawing.Size(284, 138);
-            this.panelContabilidadSubmenu.TabIndex = 26;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Location = new System.Drawing.Point(0, 80);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(284, 40);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Editar Perfil";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button6.Location = new System.Drawing.Point(0, 40);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(284, 40);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Actualizar Usuario";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // btnPlanCuentas
-            // 
-            this.btnPlanCuentas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPlanCuentas.FlatAppearance.BorderSize = 0;
-            this.btnPlanCuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlanCuentas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPlanCuentas.Location = new System.Drawing.Point(0, 0);
-            this.btnPlanCuentas.Name = "btnPlanCuentas";
-            this.btnPlanCuentas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnPlanCuentas.Size = new System.Drawing.Size(284, 40);
-            this.btnPlanCuentas.TabIndex = 0;
-            this.btnPlanCuentas.Text = "Plan de Cuentas";
-            this.btnPlanCuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlanCuentas.UseVisualStyleBackColor = true;
-            this.btnPlanCuentas.Click += new System.EventHandler(this.btnPlanCuentas_Click);
-            // 
-            // btnContabilidad
-            // 
-            this.btnContabilidad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnContabilidad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContabilidad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.btnContabilidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnContabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContabilidad.Font = new System.Drawing.Font("Calibri", 12F);
-            this.btnContabilidad.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnContabilidad.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
-            this.btnContabilidad.IconColor = System.Drawing.Color.White;
-            this.btnContabilidad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnContabilidad.IconSize = 40;
-            this.btnContabilidad.Location = new System.Drawing.Point(0, 1071);
-            this.btnContabilidad.Name = "btnContabilidad";
-            this.btnContabilidad.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
-            this.btnContabilidad.Size = new System.Drawing.Size(284, 45);
-            this.btnContabilidad.TabIndex = 25;
-            this.btnContabilidad.Text = "Contabilidad";
-            this.btnContabilidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContabilidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnContabilidad.UseVisualStyleBackColor = true;
-            this.btnContabilidad.Click += new System.EventHandler(this.btnContabilidad_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -924,8 +924,10 @@
             this.Text = "Software Contable";
             this.Activated += new System.EventHandler(this.frmPrincipal_Activated);
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.Shown += new System.EventHandler(this.frmPrincipal_Shown);
             this.panelOpciones.ResumeLayout(false);
             this.panelOpciones.PerformLayout();
+            this.panelContabilidadSubmenu.ResumeLayout(false);
             this.panelUsuariosSubmenu.ResumeLayout(false);
             this.panelComprasSubmenu.ResumeLayout(false);
             this.panelVentasSubmenu.ResumeLayout(false);
@@ -939,7 +941,6 @@
             this.panel8.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panelContabilidadSubmenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

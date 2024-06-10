@@ -1,4 +1,5 @@
 ﻿using CapaLogica.Usuarios;
+using CapaSoporte.Extras;
 using CapaSoporte.Validaciones;
 using Software_Contable.MessageBoxs;
 using System;
@@ -34,10 +35,6 @@ namespace Software_Contable.Forms.FormUsuario
             //Inicializa los ComboBox
             cmbTipoUsuario.SelectedIndex = 0;
             cmbEstadoUsuario.SelectedIndex = 0;
-
-            //Inicializa los TextBox con caracteres de contraseña
-            txtContrasena1.UseSystemPasswordChar = true;
-            txtContrasena2.UseSystemPasswordChar = true;
         }
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
@@ -70,37 +67,29 @@ namespace Software_Contable.Forms.FormUsuario
             }
             #endregion
 
-            bool ContrasenaSegura = ValidacionKeyPress.Valida_ContrasenaSegura(txtContrasena1, txtContrasena2, errorContrasena1, errorContrasena2, lblVerificaContrasena);
-
-
             try
             {
                 if (NombreUsuarioValido == true && NombreValido == true && ApellidoValido == true && DNIValido == true && EmailExiste == false)
                 {
-                    if (ContrasenaSegura == true)
+
+                    DialogResult result = msgBoxConfirmar.MostrarMessageBox("¿Está seguro de crear este usuario?");
+
+                    if (result == DialogResult.Yes)
                     {
-                        DialogResult result = msgBoxConfirmar.MostrarMessageBox("¿Está seguro de crear este usuario?");
-
-                        if (result == DialogResult.Yes)
-                        {
-                            claseUsuario.CrearUsuario(Convert.ToInt32(txtDNI.Text), txtNombreUsuario.Text, txtContrasena1.Text, txtNombre.Text.TrimStart().TrimEnd(), txtApellido.Text.TrimStart().TrimEnd(), cmbTipoUsuario.Text, txtEmail.Text.ToLower(), cmbEstadoUsuario.Text);
-                            msgBoxOperacion.MostrarMessageBox("Usuario creado exitosamente");
-                            LimpiaTextBox();
-                        }
-                        else if (result == DialogResult.No)
-                        {
-                            LimpiaTextBox();
-                        }
-                        else
-                        {
-
-                        }
-
+                        //En el tercer parametro se utiliza el DNI para inicializar la contraseña por primera vez cuando se crea el usuario
+                        claseUsuario.CrearUsuario(Convert.ToInt32(txtDNI.Text), txtNombreUsuario.Text, txtDNI.Text, txtNombre.Text.TrimStart().TrimEnd(), txtApellido.Text.TrimStart().TrimEnd(), cmbTipoUsuario.Text, txtEmail.Text.ToLower(), cmbEstadoUsuario.Text);
+                        msgBoxOperacion.MostrarMessageBox("Usuario creado exitosamente");
+                        LimpiaTextBox();
+                    }
+                    else if (result == DialogResult.No)
+                    {
+                        LimpiaTextBox();
                     }
                     else
                     {
 
                     }
+
                 }
             }
             catch (Exception) //En caso de que se genere un error/excepción se comprueba si la datos ingresados ya existen la base de datos
@@ -131,54 +120,9 @@ namespace Software_Contable.Forms.FormUsuario
             txtNombre.Clear();
             txtApellido.Clear();
             txtDNI.Clear();
-            txtContrasena1.Clear();
-            txtContrasena2.Clear();
         }
 
 
-        //Ver/Ocultar Contraseña
-        #region Ver/Ocultar Contraseña
-        private void btnVerContrasena1_Click(object sender, EventArgs e)
-        {
-            if (btnVerContrasena1.IconChar == FontAwesome.Sharp.IconChar.Eye)
-            {
-                btnVerContrasena1.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-                txtContrasena1.UseSystemPasswordChar = true;
-            }
-            else
-            {
-                btnVerContrasena1.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                txtContrasena1.UseSystemPasswordChar = false;
-            }
-
-            //Para que no genere un falso positivo al presionar el boton btnContrasena1
-            if (txtContrasena1.Text == txtContrasena2.Text)
-            {
-                errorContrasena1.Clear();                
-            }
-
-        }
-        private void btnVerContrasena2_Click(object sender, EventArgs e)
-        {
-            if (btnVerContrasena2.IconChar == FontAwesome.Sharp.IconChar.Eye)
-            {
-                btnVerContrasena2.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-                txtContrasena2.UseSystemPasswordChar = true;
-            }
-            else
-            {
-                btnVerContrasena2.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                txtContrasena2.UseSystemPasswordChar = false;
-            }
-
-            //Para que no genere un falso positivo al presionar el boton btnContrasena2
-            if (txtContrasena1.Text == txtContrasena2.Text)
-            {
-                errorContrasena2.Clear();
-            }
-
-        }
-        #endregion Ver/Ocultar Contraseña
 
         //Eventos KeyPress de TextBox
         #region Eventos KeyPress de TextBox
@@ -200,11 +144,6 @@ namespace Software_Contable.Forms.FormUsuario
         private void txtDNI_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionKeyPress.Valida_Numeros(e);
-        }
-
-        private void txtContrasena_TextChanged(object sender, EventArgs e)
-        {
-          ValidacionKeyPress.ActualizaLabel_ContrasenaSegura(txtContrasena1, lblVerificaContrasena);
         }
 
         #endregion Eventos KeyPress de TextBox
@@ -249,16 +188,20 @@ namespace Software_Contable.Forms.FormUsuario
         //Mover el Formulario
         #region Mover el Formulario 
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        ClaseMoverForm mover = new ClaseMoverForm();
+
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            mover.MoverForm(this.Handle);
         }
-
+        private void lblCrearUsuario_MouseDown(object sender, MouseEventArgs e)
+        {
+            mover.MoverForm(this.Handle);
+        }
+        private void iconCrearUsuario_MouseDown(object sender, MouseEventArgs e)
+        {
+            mover.MoverForm(this.Handle);
+        }
         #endregion
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaSoporte.Extras;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,11 +19,6 @@ namespace Software_Contable.MessageBoxs
             InitializeComponent();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.OK;
-        }
-
         public DialogResult MostrarMessageBox(string mensaje)
         {
             lblMensaje.Text = mensaje;
@@ -31,15 +27,10 @@ namespace Software_Contable.MessageBoxs
 
 
         #region Mover Formulario
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            ClaseMoverForm mover = new ClaseMoverForm();
+            mover.MoverForm(this.Handle);
         }
         #endregion
 
@@ -60,5 +51,9 @@ namespace Software_Contable.MessageBoxs
 
         #endregion
 
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

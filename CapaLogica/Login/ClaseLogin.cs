@@ -43,6 +43,7 @@ namespace CapaLogica.Login
                                 ClaseUsuarioCache.ID_Usuario_Cache = reader.GetInt32(0);  //Se envian los datos del usuario, a la Clase "ClaseUsuarioCache" de la CapaSoporte
                                 ClaseUsuarioCache.DNI_Cache = reader.GetInt32(1);
                                 ClaseUsuarioCache.NombreUsuario_Cache = reader.GetString(2);
+                                ClaseUsuarioCache.Contrasena_Cache = reader.GetString(3);
                                 ClaseUsuarioCache.Nombre_Cache = reader.GetString(4);
                                 ClaseUsuarioCache.Apellido_Cache = reader.GetString(5);
                                 ClaseUsuarioCache.TipoUsuario_Cache = reader.GetString(6);

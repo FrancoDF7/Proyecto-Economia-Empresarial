@@ -23,3 +23,4 @@ C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\Software_Contable
 C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\Software_Contable.MessageBoxs.MessageBoxConfirmarEleccion.resources
 C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\Software_Contable.MessageBoxs.MessageBoxOperacionExitosa.resources
 C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\Software_Contable.MessageBoxs.MessageBoxOperacionFallida.resources
+C:\Proyectos VS 2022\SoftwareNegocio\CapaFormularios\obj\Debug\CapaFormularios.Forms.FormUsuario.frmInicializarContrasena.resources

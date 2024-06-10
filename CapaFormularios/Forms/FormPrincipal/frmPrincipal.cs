@@ -13,6 +13,8 @@ using System.Windows.Forms;
 //using Software_Contable.Forms.FormCliente;
 //using Software_Contable.Forms.FormCompras;
 using System.Runtime.InteropServices;
+using CapaFormularios.Forms.FormUsuario;
+using CapaSoporte.Extras;
 //using Software_Contable.Forms.FormProductos;
 //using Software_Contable.Forms.FormContabilidad;
 
@@ -32,21 +34,11 @@ namespace Software_Contable.Forms.FormPrincipal
             CargarDatosUsuario();
 
             Permisos();
+
+
         }
 
-        #region Mover Formulario
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        #endregion
 
         private void timerReloj_Tick(object sender, EventArgs e)
         {
@@ -122,8 +114,6 @@ namespace Software_Contable.Forms.FormPrincipal
         }
         #endregion
 
-
-
         #region Compras
 
         private void btnCompras_Click(object sender, EventArgs e)
@@ -166,96 +156,7 @@ namespace Software_Contable.Forms.FormPrincipal
         #endregion Botones Principales
 
 
-        #region Metodos
-
-        //Muestra los datos del usuario que se le logeo en los labels
-        private void CargarDatosUsuario()
-        {
-            lblLoginTipoUsuario.Text = ClaseUsuarioCache.TipoUsuario_Cache;
-            lblLoginNombreUsuario.Text = ClaseUsuarioCache.NombreUsuario_Cache;
-        }
-
-        private void MostrarSubmenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                OcultarSubmenu();
-                subMenu.Visible = true;
-            }
-            else
-            {
-                subMenu.Visible = false;
-            }
-        }
-        private void OcultarSubmenu()
-        {
-            if (panelProductoSubmenu.Visible == true)
-            {
-                panelProductoSubmenu.Visible = false;
-            }
-            if (panelClienteSubmenu.Visible == true)
-            {
-                panelClienteSubmenu.Visible = false;
-            }
-            if (panelProveedorSubmenu.Visible == true)
-            {
-                panelProveedorSubmenu.Visible = false;
-            }
-            if (panelComprasSubmenu.Visible == true)
-            {
-                panelComprasSubmenu.Visible = false;
-            }
-            if (panelVentasSubmenu.Visible == true)
-            {
-                panelVentasSubmenu.Visible = false;
-            }
-            if (panelUsuariosSubmenu.Visible == true)
-            {
-                panelUsuariosSubmenu.Visible = false;
-            }
-        }
-
-        private void InicializarSubmenus()
-        {
-            panelProductoSubmenu.Visible = false;
-            panelClienteSubmenu.Visible = false;
-            panelProveedorSubmenu.Visible = false;
-            panelComprasSubmenu.Visible = false;
-            panelVentasSubmenu.Visible = false;
-            panelUsuariosSubmenu.Visible = false;
-        }
-
-        private void AbrirFormHijo(object formHijo)
-        {
-            // Verificar si el panel contenedor ya tiene un control
-            if (this.panelContenedor.Controls.Count > 0)
-            {
-                // Obtener el control actualmente abierto en el panel contenedor
-                var controlActual = this.panelContenedor.Controls[0];
-
-                // Verificar si el control actualmente abierto es un formulario del mismo tipo que el formulario que se está abriendo
-                if (controlActual.GetType() == formHijo.GetType())
-                {
-                    // El formulario ya está abierto, no hacer nada
-                    return;
-                }
-                else
-                {
-                    // El formulario no está abierto, eliminar el control actualmente abierto en el panel contenedor
-                    this.panelContenedor.Controls.RemoveAt(0);
-                }
-            }
-
-            Form fh = formHijo as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fh);
-            this.panelContenedor.Tag = fh;
-            fh.Show();
-        }
-
-
-        #endregion
+        
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
@@ -332,7 +233,123 @@ namespace Software_Contable.Forms.FormPrincipal
             btnCerrarSesion.IconColor = Color.Black;
         }
 
+        //Muestra el un formulario para cambiar la contraseña si detecta que todos los caracteres de la contraseña son numeros
+        private void frmPrincipal_Shown(object sender, EventArgs e)
+        {
+            // Verifica si ClaseUsuarioCache.Contrasena_Cache es un número
+            if (int.TryParse(ClaseUsuarioCache.Contrasena_Cache, out int numero))
+            {
+                // Muestra el formulario
+                frmInicializarContrasena frmInicializarContrasena = new frmInicializarContrasena();
+                frmInicializarContrasena.ShowDialog();
 
+                if (frmInicializarContrasena.DialogResult == DialogResult.OK)
+                {
+
+                }
+                else
+                {
+                    this.Close();
+                }
+
+            }
+        }
+
+        #region Mover Formulario
+
+        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ClaseMoverForm mover = new ClaseMoverForm();
+            mover.MoverForm(this.Handle);
+        }
+
+        #endregion
+
+
+        #region Metodos
+
+        //Muestra los datos del usuario que se le logeo en los labels
+        private void CargarDatosUsuario()
+        {
+            lblLoginTipoUsuario.Text = ClaseUsuarioCache.TipoUsuario_Cache;
+            lblLoginNombreUsuario.Text = ClaseUsuarioCache.NombreUsuario_Cache;
+        }
+        private void MostrarSubmenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                OcultarSubmenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+        private void OcultarSubmenu()
+        {
+            if (panelProductoSubmenu.Visible == true)
+            {
+                panelProductoSubmenu.Visible = false;
+            }
+            if (panelClienteSubmenu.Visible == true)
+            {
+                panelClienteSubmenu.Visible = false;
+            }
+            if (panelProveedorSubmenu.Visible == true)
+            {
+                panelProveedorSubmenu.Visible = false;
+            }
+            if (panelComprasSubmenu.Visible == true)
+            {
+                panelComprasSubmenu.Visible = false;
+            }
+            if (panelVentasSubmenu.Visible == true)
+            {
+                panelVentasSubmenu.Visible = false;
+            }
+            if (panelUsuariosSubmenu.Visible == true)
+            {
+                panelUsuariosSubmenu.Visible = false;
+            }
+        }
+        private void InicializarSubmenus()
+        {
+            panelProductoSubmenu.Visible = false;
+            panelClienteSubmenu.Visible = false;
+            panelProveedorSubmenu.Visible = false;
+            panelComprasSubmenu.Visible = false;
+            panelVentasSubmenu.Visible = false;
+            panelUsuariosSubmenu.Visible = false;
+        }
+        private void AbrirFormHijo(object formHijo)
+        {
+            // Verificar si el panel contenedor ya tiene un control
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                // Obtener el control actualmente abierto en el panel contenedor
+                var controlActual = this.panelContenedor.Controls[0];
+
+                // Verificar si el control actualmente abierto es un formulario del mismo tipo que el formulario que se está abriendo
+                if (controlActual.GetType() == formHijo.GetType())
+                {
+                    // El formulario ya está abierto, no hacer nada
+                    return;
+                }
+                else
+                {
+                    // El formulario no está abierto, eliminar el control actualmente abierto en el panel contenedor
+                    this.panelContenedor.Controls.RemoveAt(0);
+                }
+            }
+
+            Form fh = formHijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        }
         public void Permisos()
         {
             if (lblLoginTipoUsuario.Text == "Administrador")
@@ -347,12 +364,16 @@ namespace Software_Contable.Forms.FormPrincipal
                 btnProveedores.Visible = false;
                 btnVentas.Visible = true;
                 btnCompras.Visible = false;
-               
-                btnUsuariosCrear.Visible= false;
-                btnUsuariosActualizar.Visible= false;
+
+                btnUsuariosCrear.Visible = false;
+                btnUsuariosActualizar.Visible = false;
                 btnUsuariosPerfil.Visible = true;
             }
         }
+
+        #endregion
+
+
 
 
     }

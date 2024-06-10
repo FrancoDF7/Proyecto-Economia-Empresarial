@@ -15,7 +15,7 @@ namespace AccesoDB
 
         public ConexionSQL()
         {
-            strConexion = "Server=PAVILION_GTX\\FRANCOSQL; DataBase = DBContable; integrated security = true";
+            strConexion = "Server=PAVILION_GTX\\FRANCOSQL; DataBase = DBNegocio; integrated security = true";
         }
 
         protected SqlConnection GetConnection()

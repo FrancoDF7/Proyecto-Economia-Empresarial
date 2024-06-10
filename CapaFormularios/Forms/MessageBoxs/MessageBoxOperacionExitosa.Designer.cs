@@ -31,8 +31,8 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.btnAceptar = new FontAwesome.Sharp.IconButton();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.btnAceptar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             this.SuspendLayout();
@@ -81,26 +81,6 @@
             this.btnCerrar.TabIndex = 44;
             this.btnCerrar.UseVisualStyleBackColor = false;
             // 
-            // btnAceptar
-            // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnAceptar.FlatAppearance.BorderSize = 0;
-            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnAceptar.IconColor = System.Drawing.Color.Black;
-            this.btnAceptar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAceptar.Location = new System.Drawing.Point(292, 118);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(97, 30);
-            this.btnAceptar.TabIndex = 55;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = false;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
             // lblMensaje
             // 
             this.lblMensaje.AutoSize = true;
@@ -113,14 +93,36 @@
             this.lblMensaje.TabIndex = 56;
             this.lblMensaje.Text = "Operación Exitosa";
             // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.LawnGreen;
+            this.btnAceptar.FlatAppearance.BorderSize = 2;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.White;
+            this.btnAceptar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnAceptar.IconColor = System.Drawing.Color.White;
+            this.btnAceptar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAceptar.IconSize = 30;
+            this.btnAceptar.Location = new System.Drawing.Point(297, 110);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(167, 37);
+            this.btnAceptar.TabIndex = 67;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
             // MessageBoxOperacionExitosa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(491, 160);
-            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.iconPictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -140,7 +142,7 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel BarraTitulo;
         private FontAwesome.Sharp.IconButton btnCerrar;
-        private FontAwesome.Sharp.IconButton btnAceptar;
         private System.Windows.Forms.Label lblMensaje;
+        private FontAwesome.Sharp.IconButton btnAceptar;
     }
 }
