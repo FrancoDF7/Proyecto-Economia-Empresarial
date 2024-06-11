@@ -1,4 +1,4 @@
-﻿namespace Software_Contable.Forms.FormUsuario
+﻿namespace CapaFormularios.Forms.FormUsuario
 {
     partial class frmEditarPerfil
     {

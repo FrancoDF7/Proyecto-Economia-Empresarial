@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Software_Contable.MessageBoxs
+namespace CapaFormularios.MessageBoxs
 {
     public partial class MessageBoxConfirmarEleccion : Form
     {

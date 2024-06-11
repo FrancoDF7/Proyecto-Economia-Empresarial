@@ -1,5 +1,5 @@
 ﻿using CapaSoporte.Cache;
-using Software_Contable.Forms.FormUsuario;
+using CapaFormularios.Forms.FormUsuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,16 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using Software_Contable.Forms.FormProveedor;
+using CapaFormularios.Forms.FormProveedor;
 //using Software_Contable.Forms.FormCliente;
 //using Software_Contable.Forms.FormCompras;
 using System.Runtime.InteropServices;
-using CapaFormularios.Forms.FormUsuario;
 using CapaSoporte.Extras;
 //using Software_Contable.Forms.FormProductos;
 //using Software_Contable.Forms.FormContabilidad;
 
-namespace Software_Contable.Forms.FormPrincipal
+namespace CapaFormularios.Forms.FormPrincipal
 {
     public partial class frmPrincipal : Form
     {
@@ -34,8 +33,6 @@ namespace Software_Contable.Forms.FormPrincipal
             CargarDatosUsuario();
 
             Permisos();
-
-
         }
 
 
@@ -98,7 +95,7 @@ namespace Software_Contable.Forms.FormPrincipal
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             MostrarSubmenu(panelProveedorSubmenu);
-            //AbrirFormHijo(new frmProveedores());
+            AbrirFormHijo(new frmProveedores());
         }
         private void btnProveedorIngresar_Click(object sender, EventArgs e)
         {

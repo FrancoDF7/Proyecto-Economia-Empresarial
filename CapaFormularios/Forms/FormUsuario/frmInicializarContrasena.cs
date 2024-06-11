@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaSoporte.Extras;
-using Software_Contable.MessageBoxs;
+using CapaFormularios.MessageBoxs;
 
 namespace CapaFormularios.Forms.FormUsuario
 {

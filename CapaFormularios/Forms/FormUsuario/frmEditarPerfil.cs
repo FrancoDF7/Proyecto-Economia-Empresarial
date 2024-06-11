@@ -11,9 +11,9 @@ using System.Windows.Forms;
 using CapaLogica.Usuarios;
 using CapaSoporte.Cache;
 using CapaSoporte.Validaciones;
-using Software_Contable.MessageBoxs;
+using CapaFormularios.MessageBoxs;
 
-namespace Software_Contable.Forms.FormUsuario
+namespace CapaFormularios.Forms.FormUsuario
 {
     public partial class frmEditarPerfil : Form
     {

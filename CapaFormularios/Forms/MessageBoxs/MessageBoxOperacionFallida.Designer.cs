@@ -1,4 +1,4 @@
-﻿namespace Software_Contable.MessageBoxs
+﻿namespace CapaFormularios.MessageBoxs
 {
     partial class MessageBoxOperacionFallida
     {

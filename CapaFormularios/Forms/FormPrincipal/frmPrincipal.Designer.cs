@@ -1,4 +1,4 @@
-﻿namespace Software_Contable.Forms.FormPrincipal
+﻿namespace CapaFormularios.Forms.FormPrincipal
 {
     partial class frmPrincipal
     {

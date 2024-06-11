@@ -1,4 +1,4 @@
-﻿namespace Software_Contable
+﻿namespace CapaFormularios
 {
     partial class frmLogin
     {

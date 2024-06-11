@@ -1,7 +1,7 @@
 ﻿using CapaLogica.Usuarios;
 using CapaSoporte.Extras;
 using CapaSoporte.Validaciones;
-using Software_Contable.MessageBoxs;
+using CapaFormularios.MessageBoxs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 
-namespace Software_Contable.Forms.FormUsuario
+namespace CapaFormularios.Forms.FormUsuario
 {
     public partial class frmCrearUsuario : Form
     {

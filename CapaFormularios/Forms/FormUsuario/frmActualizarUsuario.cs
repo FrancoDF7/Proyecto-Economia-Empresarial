@@ -1,6 +1,7 @@
 ﻿using CapaLogica.Usuarios;
+using CapaSoporte.Extras;
 using CapaSoporte.Validaciones;
-using Software_Contable.MessageBoxs;
+using CapaFormularios.MessageBoxs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Software_Contable.Forms.FormUsuario
+namespace CapaFormularios.Forms.FormUsuario
 {
     public partial class frmActualizarUsuario : Form
     {
@@ -250,17 +251,11 @@ namespace Software_Contable.Forms.FormUsuario
 
         //Eventos para mover el Formulario
         #region Mover Formulario
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        private void BarraTitulo_MouseDown_1(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            ClaseMoverForm mover = new ClaseMoverForm();
+            mover.MoverForm(this.Handle);
         }
-
 
         #endregion
 
@@ -328,6 +323,7 @@ namespace Software_Contable.Forms.FormUsuario
             txtBuscarUsuario.AutoCompleteCustomSource = claseUsuario.CargaTextBox_Usuario(cmbBuscarUsuario.Text);
         }
         #endregion
+
 
     }
 }

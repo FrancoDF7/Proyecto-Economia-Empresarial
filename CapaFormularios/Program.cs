@@ -1,7 +1,6 @@
 ﻿using CapaFormularios.Forms.FormUsuario;
-using Software_Contable;
-using Software_Contable.Forms.FormPrincipal;
-using Software_Contable.Forms.FormUsuario;
+using CapaFormularios;
+using CapaFormularios.Forms.FormPrincipal;
 using System;
 using System.Collections.Generic;
 using System.Linq;

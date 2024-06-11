@@ -1,4 +1,4 @@
-﻿namespace Software_Contable.Forms.FormUsuario
+﻿namespace CapaFormularios.Forms.FormUsuario
 {
     partial class frmActualizarUsuario
     {
@@ -523,7 +523,7 @@
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1027, 35);
             this.BarraTitulo.TabIndex = 87;
-            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown_1);
             // 
             // lblSeccionClientes
             // 
@@ -536,6 +536,7 @@
             this.lblSeccionClientes.Size = new System.Drawing.Size(219, 23);
             this.lblSeccionClientes.TabIndex = 88;
             this.lblSeccionClientes.Text = "Actualizar Usuarios";
+            this.lblSeccionClientes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown_1);
             // 
             // iconPictureBox1
             // 
@@ -549,6 +550,7 @@
             this.iconPictureBox1.Size = new System.Drawing.Size(49, 35);
             this.iconPictureBox1.TabIndex = 86;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown_1);
             // 
             // btnCerrar
             // 

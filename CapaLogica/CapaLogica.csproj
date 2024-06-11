@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Login\ClaseLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores\ClaseProveedores.cs" />
     <Compile Include="Usuarios\ClaseUsuario.cs" />
   </ItemGroup>
   <ItemGroup>

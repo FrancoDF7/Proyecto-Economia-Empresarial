@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaSoporte.Extras;
 
-namespace Software_Contable.MessageBoxs
+namespace CapaFormularios.MessageBoxs
 {
     public partial class MessageBoxOperacionFallida : Form
     {

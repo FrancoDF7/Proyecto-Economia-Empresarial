@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaSoporte.Validaciones;
 using CapaLogica.Login;
-using Software_Contable.Forms.FormPrincipal;
+using CapaFormularios.Forms.FormPrincipal;
 using System.Text.RegularExpressions;
 using System.Windows.Media;
 using Microsoft.SqlServer.Server;
@@ -18,7 +18,7 @@ using CapaSoporte.Cache;
 using CapaFormularios.Forms.FormUsuario;
 
 
-namespace Software_Contable
+namespace CapaFormularios
 {
     public partial class frmLogin : Form
     {
@@ -194,7 +194,7 @@ namespace Software_Contable
             txtUsuario.Text = "FrankAdmin";
             txtUsuario.ForeColor = Color.Gray;
 
-            txtContrasena.Text = "123";
+            txtContrasena.Text = "Juan123.";
             txtContrasena.ForeColor = Color.Gray;
             txtContrasena.UseSystemPasswordChar = false;
         }
